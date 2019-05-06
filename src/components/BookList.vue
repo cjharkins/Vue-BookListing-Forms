@@ -33,10 +33,10 @@ export default {
   methods: {
     appendBook({ title, author, finishedReading, ownership}) {
       this.books.push({
-        title,
-        author,
-        finishedReading,
-        ownership,
+        title: bookData.bookTitle,
+        author: bookData.bookAuthor,
+        finishedReading: bookData.finishedReading,
+        ownership: bookData.ownership
       });
     }
   }

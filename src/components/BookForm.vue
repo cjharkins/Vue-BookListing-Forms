@@ -32,13 +32,7 @@ export default {
   },
   methods: {
     bookSubmit(bookData) {
-      const formattedBookData = {
-        title: bookData.bookTitle,
-        author: bookData.bookAuthor,
-        finishedReading: bookData.finishedReading,
-        ownership: bookData.ownership
-      }
-      this.$emit("addBook", formattedBookData);
+      this.$emit("addBook", bookData);
     }
   }
 };
